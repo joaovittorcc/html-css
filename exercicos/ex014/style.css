@@ -1,0 +1,16 @@
+main{
+    background-image: linear-gradient(to top, #303036, #30BCED );
+    background-attachment: fixed;
+    padding: 10px;
+    margin: auto;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px #1c7291;
+}
+body{
+    background-color: #000000;
+   
+}
+h1 {
+    text-align: center;
+
+}
