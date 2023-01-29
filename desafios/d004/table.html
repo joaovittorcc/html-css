@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>desafio com tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        th, td, tr {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+         thead th {
+            background-color: #424141;
+            color: white;
+        }
+
+        .destaque {
+            text-align: left;
+            background-color: #424141;
+            color: white;
+            font-weight: bold;
+        }
+
+        .destaque > th {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2">Área</th>
+                <th rowspan="2">Diciplinas</th>
+                <th colspan="2">Notas</th>
+                <th rowspan="2">Media</th>
+            </tr>
+            <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3">Exatas</th>
+                <td>Matematica</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Fisica</td>
+                <td>8.0</td>
+                <td>9.0</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <td>quimica</td>
+                <td>7.0</td>
+                <td>8.5<td>
+                7.75
+            </tr>
+            <tr class="destaque">
+                <th colspan="4">Media exatas</th>
+                <td>8.75</td>
+            </tr>
+            <tr>
+                <th rowspan="2">humanas</th>
+                <td>historia</td>
+                <td>10</td>
+                <td>7</td>
+                <td>8.5</td>
+            </tr>
+            <tr>
+                <td>geografia</td>
+                <td>6</td>
+                <td>7</td>
+                <td>6.5</td>
+            </tr>
+            <tr class="destaque">
+                <th colspan="4">media humanas</th>
+                <td>7.5</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
