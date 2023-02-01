@@ -1,0 +1,26 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+.box {
+    outline: 5px solid red;
+}
+
+img {
+    transform: rotate(29deg);
+}
+/*
+transform: rotate = deg/turb
+transform: scale = turn scale
+transform: translate= y,x/%
+transform: skew = slice
+
+*/

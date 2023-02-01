@@ -1,0 +1,49 @@
+body {
+    display: grid;
+    font-family: sans-serif;
+    font-size: 300%;
+    height: 100vh;
+    place-items: center;
+}
+
+h1 {
+    animation: fade 1ms 1s forwards;
+    opacity: 0;
+}
+.reveal {
+    overflow: hidden;
+    position: relative;
+}
+
+.reveal::after {
+    animation: reveal 2s cubic-bezier(0.85, 0, 0.15, 1) forwards;
+    background-color: #157bad;
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    
+}
+  
+@keyframes reveal {
+
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(100%);
+    }
+    
+}
+
+@keyframes fade {
+    
+    to {
+        opacity: 1;
+    }
+    
+}

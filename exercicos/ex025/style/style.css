@@ -1,0 +1,26 @@
+@keyframes animation {
+    0% {background-color: purple; width: 500px;}
+    50% {background-color: yellow; width: 300px;}
+    100% {background-color: green; width: 500px; height: 300px;}
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(0, 0, 0, 0.89);
+}
+
+.conteiner {
+    width: 500px;
+    height: 500px;
+    background-color: purple;
+    animation: animation;
+    animation-duration: 5s;
+    animation-delay: 4s;
+    animation-iteration-count: infinite;
+
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercio de tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bolder;
+            padding: 10px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .cnome {
+            background-color: greenyellow;
+        }
+
+        .cgrup {
+            background-color: rgba(255, 0, 0, 0.582);
+        }
+
+        div#conteiner {
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <table>
+            <colgroup>
+                <col class="cnome">
+                <col class="cgrup" span="2">
+                <col class="">
+        
+            </colgroup>
+            <caption>cadastro</caption>
+            <tr>
+                <th scope="col">nome</th>
+                <th scope="col">sexo</th>
+                <th scope="col">idade</th>
+                <th scope="col">profissão</th>
+            </tr>
+            <tr>
+                <td>claudio</td>
+                <td>m</td>
+                <td>28</td>
+                <td>programador</td>
+            </tr>
+            <tr>
+                <td>gustavo</td>
+                <td>m</td>
+                <td>42</td>
+                <td>professor</td>
+            </tr>
+            <tr>
+                <td>hrlio</td>
+                <td>m</td>
+                <td>19</td>
+                <td>vendedor</td>
+            </tr>
+            <tr>
+                <td>maria</td>
+                <td>f</td>
+                <td>39</td>
+                <td>medica</td>
+            </tr>
+            <tr>
+                <td>pedro</td>
+                <td>m</td>
+                <td>22</td>
+                <td>nutricionista</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

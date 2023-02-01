@@ -1,0 +1,38 @@
+@keyframes fly {
+    from{
+        transform: translateX(0);
+    }
+    
+    to{
+        transform: translateX(80vw);
+    }
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*
+animation-name = fly;
+animation-duration = ms,s/ 500ms=.5s
+animation-delay= ms,s/ delay
+
+
+*/
+
+body {
+    background: url(../imagens/fundo.jpg) no-repeat top center;
+    background-size: cover;
+    position: absolute;
+    width: 100vw;
+}
+
+img {
+     animation:fly 5s;
+    animation-timing-function: ease-in; 
+   position: absolute;
+   top: 200px;
+   /*animation-iteration-count: infinite;*/
+   animation-fill-mode: forwards;
+}
