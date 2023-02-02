@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario</title>
+    <style>
+        * {
+            margin:10 0px;
+            padding-bottom: 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>teste de formulario</h1>
+    <form action="cadastro.js" method="get" autocomplete="on">
+        <fieldset>
+            <legend>dados pessoais</legend>
+            <div><label for="inome">nome:</label>
+                <input type="text" name="nome" id="inome" required maxlength="30" minlength="3" placeholder="nome completo" autocomplete="nome"
+                >
+            </div>
+            <div>
+                <label for="imedia">media:</label>
+                <input type="number" min="0"
+                max="10"
+                step=".5" required value="5">
+            </div>
+            <div>
+                <label for="imes">periodo letivo</label>
+                <input type="month" name="mes" id="imes">
+            </div>
+            <div>
+                <label for="iemail"> email:</label>
+                <input type="email" required
+                placeholder="example@gmail.com"
+                >
+            </div>
+            <div>
+                <label for="icell">telefone:</label>
+                <input type="tel" placeholder="(DDD)-0 0000-0000" pattern="^[0-9]{4,5}-{0-9}{4}$">
+            </div>
+            <div>
+                <input type="submit" value="enviar">
+                <input type="reset" value="reset">
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+</html>

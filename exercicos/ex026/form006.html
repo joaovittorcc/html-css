@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+<body>
+    <form action="cadastro.js" method="get">
+
+        <div> 
+            <label for="iest">estado:</label>
+            <select name="" id="">
+                <optgroup label="sudeste">
+                    <option value="rj">
+                        rio de janeiro
+                    </option>
+                    <option value="mg">
+                        minas gerais
+                    </option>
+                </optgroup>
+            </select>
+
+            <p>
+                <label for="iprof">profissão</label>
+                <input type="text" name="prof" id="iprof" list="lstprof">
+                <datalist id="lstprof">
+                    <option value="adm">
+                        administrador
+                    </option>
+                    <option value="cont">
+                        contador
+                    </option>
+                </datalist>
+                
+            </p>
+            <p>
+                <label for="imsg"></label>
+                <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+            </p>
+
+        </div>
+        <div>
+            <input type="submit" value="enviar">
+            <input type="reset" value="reset">
+            
+        </div>
+    </form>
+</body>
+</html>
