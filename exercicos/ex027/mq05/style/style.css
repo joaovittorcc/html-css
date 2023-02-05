@@ -10,6 +10,7 @@ body, html {
     background-color: lightgray;
 }
 
+
 header {
     background-color: gray;
 }
@@ -61,6 +62,7 @@ main {
     margin: auto;
     padding: 10px;
     border-radius: 10px;
+    margin-top: 10px;
 }
 
 article > h1 {
